@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#dae2fd", "on-primary": "#003824", "on-secondary-container": "#adb4ce", "tertiary-fixed": "#ffddb8", "on-tertiary-container": "#523200", "surface-container-highest": "#2f3543", "surface-tint": "#4edea3", "tertiary": "#ffb95f", "surface": "#0d1320", "background": "#0d1320", "on-primary-fixed-variant": "#005236", "tertiary-container": "#e29100", "primary-container": "#10b981", "on-error": "#690005", "on-surface": "#dde2f5", "on-tertiary": "#472a00", "tertiary-fixed-dim": "#ffb95f", "surface-bright": "#333948", "surface-container": "#1a1f2d", "inverse-on-surface": "#2a303f", "error-container": "#93000a", "surface-variant": "#2f3543", "on-primary-container": "#00422b", "primary-fixed": "#6ffbbe", "primary-fixed-dim": "#4edea3", "inverse-primary": "#006c49", "on-primary-fixed": "#002113", "inverse-surface": "#dde2f5", "on-surface-variant": "#bbcabf", "on-background": "#dde2f5", "secondary-container": "#3f465c", "surface-container-high": "#242a38", "outline": "#86948a", "on-secondary-fixed": "#131b2e", "on-error-container": "#ffdad6", "surface-container-low": "#161b29", "surface-container-lowest": "#080e1b", "on-secondary-fixed-variant": "#3f465c", "primary": "#4edea3", "on-tertiary-fixed-variant": "#653e00", "secondary": "#bec6e0", "on-tertiary-fixed": "#2a1700", "on-secondary": "#283044", "error": "#ffb4ab", "surface-dim": "#0d1320", "outline-variant": "#3c4a42", "secondary-fixed-dim": "#bec6e0" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "metric-stat": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Inter" ], "label-md": [ "Inter" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "headline-xl": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ] }, "fontSize": { "metric-stat": [ "1.875rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "display-lg": [ "3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "label-md": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-sm": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "headline-lg": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "0.875rem", { "lineHeight": "1.375rem", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-xl": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "0.75rem", { "lineHeight": "1.125rem", "letterSpacing": "0.005em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><main class="w-full min-h-screen bg-surface flex flex-col justify-center items-center px-gutter-mobile md:px-gutter"><div class="flex flex-col w-full text-on-surface">
+<header class="w-full max-w-7xl mx-auto flex items-center justify-between py-6 px-4 sm:px-6 lg:px-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shadow-lg relative">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+<span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[10px] font-bold">check</span>
+</span>
+</div>
+<div class="flex items-center tracking-tight">
+<span class="font-headline-sm text-headline-sm text-on-surface">Missed</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Call</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        System Operational • &lt; 28s SLA
+      </div>
+<a class="px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-surface-tint shadow-lg transition-all duration-200" href="#pricing">
+        Start Recovering
+      </a>
+</div>
+</header>
+<section class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20">
+<div class="absolute -top-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm w-fit shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Zero Unattended Inbounds</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight tracking-tight">
+          Turn Missed Calls Into <span class="text-primary">Customers</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          When you can't answer the phone, we automatically follow up with the caller, help them get the information they need, and capture the opportunity for your business.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-2">
+<a class="px-6 py-3.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-surface-tint shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-all" href="#pricing">
+<span>Start Recovering Customers</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="px-6 py-3.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center justify-center gap-2" href="#how-it-works">
+<span>See How It Works</span>
+<span class="material-symbols-outlined text-base text-on-surface-variant">play_circle</span>
+</a>
+</div>
+<div class="flex items-center gap-6 pt-4 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span>Setup in 24 hours</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span>No software to install</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span>Flat $99/mo</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl bg-surface-container-low p-6 shadow-2xl overflow-hidden">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-2">Live Caller Recovery Engine</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              Recovered in 18s
+            </span>
+</div>
+<div class="mt-5 space-y-4">
+<div class="p-3.5 rounded-xl bg-surface-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-error/15 text-error flex items-center justify-center">
+<span class="material-symbols-outlined">phone_missed</span>
+</div>
+<div>
+<div class="font-headline-sm text-sm text-on-surface">Inbound Missed Call</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">+1 (415) 892-4102 • Line Busy</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-error bg-error/10 px-2.5 py-1 rounded-md font-semibold">14:02:11</span>
+</div>
+<div class="flex items-center justify-center py-0.5">
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">timer</span>
+<span>Automated SMS triggered in 8 seconds</span>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 space-y-3">
+<div class="flex flex-col items-end">
+<div class="bg-primary text-on-primary font-body-sm text-body-sm px-3.5 py-2 rounded-2xl rounded-tr-none max-w-xs shadow-sm">
+                  Hi, this is Apex Commercial HVAC! Sorry we missed your call. How can we help you right now?
+                </div>
+<span class="text-[10px] text-on-surface-variant mt-1 mr-1">14:02:19 • Sent</span>
+</div>
+<div class="flex flex-col items-start">
+<div class="bg-surface-container-high text-on-surface font-body-sm text-body-sm px-3.5 py-2 rounded-2xl rounded-tl-none max-w-xs shadow-sm">
+                  Hey! Our warehouse AC just stopped cooling. Need urgent repair quote for rooftop unit today.
+                </div>
+<span class="text-[10px] text-on-surface-variant mt-1 ml-1">14:02:44 • Client</span>
+</div>
+<div class="flex flex-col items-end">
+<div class="bg-primary text-on-primary font-body-sm text-body-sm px-3.5 py-2 rounded-2xl rounded-tr-none max-w-xs shadow-sm">
+                  Got it. I've logged this as High Priority. Would 3:30 PM today work for our technician Dave to inspect?
+                </div>
+<span class="text-[10px] text-on-surface-variant mt-1 mr-1">14:02:51 • Sent</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-center justify-between shadow-lg">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+<div>
+<div class="font-headline-sm text-sm text-on-surface flex items-center gap-2">
+                    Confirmed Inspection Booked
+                    <span class="px-2 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-xs font-bold">$1,250 Pipeline Value</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Instant notification dispatched to dispatch team</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full bg-surface-container-lowest py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto flex flex-col gap-14">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto gap-4">
+<span class="font-label-sm text-label-sm text-tertiary px-3.5 py-1 rounded-full bg-tertiary/10 font-bold uppercase tracking-wider">The Silent Revenue Leak</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+          Businesses spend fortune generating phone calls. When nobody answers, customers simply call your competitor.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          67% of callers hang up without leaving a voicemail. If you don't engage them in the first two minutes, they are gone forever.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="rounded-2xl bg-surface-container-low p-8 flex flex-col justify-between">
+<div class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-error/15 text-error font-label-sm text-label-sm font-semibold">Traditional Way</span>
+<span class="material-symbols-outlined text-error">close</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">The Leaky Bucket</h3>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-lg mt-0.5">cancel</span>
+<span>Phone rings during lunch or off-hours; sent straight to voicemail.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-lg mt-0.5">cancel</span>
+<span>Caller immediately clicks the next sponsored Google listing.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-lg mt-0.5">cancel</span>
+<span>You call back 3 hours later—they already hired someone else.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-lg mt-0.5">cancel</span>
+<span>Ad budget wasted, lifetime customer value lost.</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 p-4 rounded-xl bg-error/10 text-error font-label-md text-label-md font-semibold text-center">
+            Average Loss: -$3,800/month in uncaptured revenue
+          </div>
+</div>
+<div class="rounded-2xl bg-surface-container p-8 flex flex-col justify-between relative shadow-xl">
+<div class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm font-semibold">With MissedCall</span>
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">The Instant Recovery Shield</h3>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+<span>Immediate intelligent SMS sent in under 20 seconds while intent is boiling.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+<span>The customer pauses their search because they are already talking to you.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+<span>Conversational workflow collects project scope, urgency, and preferred time.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+<span>Your team receives clean, actionable opportunity alerts ready to close.</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 p-4 rounded-xl bg-primary/15 text-primary font-label-md text-label-md font-bold text-center">
+            Net Result: 62% of missed calls recovered into qualified pipeline
+          </div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8" id="how-it-works">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto gap-4 mb-16">
+<span class="font-label-sm text-label-sm text-primary px-3.5 py-1 rounded-full bg-primary/10 font-bold uppercase tracking-wider">How It Works</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Five Stages of Seamless Opportunity Capture</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+        Hands-off for you, fast and reassuring for your prospects.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+<div class="rounded-xl bg-surface-container-low p-6 flex flex-col gap-4 relative">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-metric-stat text-metric-stat text-primary">
+          1
+        </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Customer Calls</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          A high-intent prospect dials your business phone number looking for immediate service or quotation.
+        </p>
+</div>
+<div class="rounded-xl bg-surface-container-low p-6 flex flex-col gap-4 relative">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-metric-stat text-metric-stat text-tertiary">
+          2
+        </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">You Miss The Call</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          You are on a job, in a meeting, with another client, or it's outside your normal office operating hours.
+        </p>
+</div>
+<div class="rounded-xl bg-surface-container-low p-6 flex flex-col gap-4 relative">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-metric-stat text-metric-stat text-primary">
+          3
+        </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">We Follow Up</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Within 30 seconds, our automated recovery engine sends a tailored, friendly SMS from your business line.
+        </p>
+</div>
+<div class="rounded-xl bg-surface-container-low p-6 flex flex-col gap-4 relative">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-metric-stat text-metric-stat text-primary">
+          4
+        </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">We Engage Them</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Interactive smart messaging asks key qualification questions, capturing service details and timing.
+        </p>
+</div>
+<div class="rounded-xl bg-surface-container p-6 flex flex-col gap-4 relative shadow-lg">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center font-metric-stat text-metric-stat font-bold">
+          5
+        </div>
+<h4 class="font-headline-sm text-headline-sm text-primary">You Win The Deal</h4>
+<p class="font-body-sm text-body-sm text-on-surface">
+          Receive a neat summary with contact details, project scope, and an appointment booked directly into your schedule.
+        </p>
+</div>
+</div>
+</section>
+<section class="w-full bg-surface-container-lowest py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto flex flex-col gap-10">
+<div class="text-center flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-primary px-3.5 py-1 rounded-full bg-primary/10 font-bold uppercase tracking-wider self-center">Interactive ROI Calculator</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Calculate What You Are Leaving On The Table</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">See how quickly MissedCall pays for itself every single month.</p>
+</div>
+<div class="rounded-2xl bg-surface-container-low p-8 shadow-xl flex flex-col gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="flex flex-col gap-6">
+<div>
+<div class="flex justify-between items-center mb-2">
+<label class="font-label-md text-label-md text-on-surface" for="callsSlider">Missed calls per week</label>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="callsValue">8 calls</span>
+</div>
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-[#4edea3]" id="callsSlider" max="40" min="1" type="range" value="8"/>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<label class="font-label-md text-label-md text-on-surface" for="dealSlider">Average customer deal value</label>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="dealValue">$450</span>
+</div>
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-[#4edea3]" id="dealSlider" max="3000" min="50" step="50" type="range" value="450"/>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container p-6 flex flex-col items-center text-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Estimated Monthly Recovered Pipeline</span>
+<div class="font-display-lg text-display-lg text-primary font-bold leading-none" id="recoveredRevenue">
+              $8,928
+            </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+              Based on conservative 58% SMS response rate and 40% deal closure.
+            </div>
+<div class="mt-3 px-3 py-1.5 rounded-lg bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+              Return on MissedCall ($99/mo): <span class="font-bold" id="roiMultiplier">90x</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8" id="pricing">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto gap-4 mb-16">
+<span class="font-label-sm text-label-sm text-primary px-3.5 py-1 rounded-full bg-primary/10 font-bold uppercase tracking-wider">Simple, Transparent Pricing</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">One Plan. Complete Recovery.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+        No per-seat licenses. No confusing tiers. Pure customer capture.
+      </p>
+</div>
+<div class="max-w-xl mx-auto">
+<div class="rounded-3xl bg-surface-container-low p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-on-primary font-label-sm text-label-sm font-bold py-1.5 px-6 rounded-bl-xl shadow-md">
+          Most Popular
+        </div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">Standard Business Recovery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Full-service missed call engagement tailored to your business.</p>
+</div>
+<div class="flex items-baseline gap-2 my-8">
+<span class="font-display-lg text-display-lg text-on-surface font-extrabold">$99</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">/ month</span>
+<span class="ml-auto font-label-sm text-label-sm text-primary bg-primary/10 px-3 py-1 rounded-md">Cancel anytime</span>
+</div>
+<div class="space-y-4 pt-2 pb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Automatic missed-call follow-up in &lt; 30s</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Smart customer conversations via SMS</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Detailed opportunity &amp; project scope capture</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Direct appointment &amp; callback scheduling</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Instant alerts via Email and SMS</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Dedicated business line setup included</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Fully deployed within 24 hours guaranteed</span>
+</div>
+</div>
+<button class="w-full py-4 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm font-bold hover:bg-surface-tint shadow-xl shadow-primary/25 transition-all text-center" onclick="alert('Checkout initiated! Setting up your 24hr recovery service.')">
+          Start Recovering Customers
+        </button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-4">
+          Risk-free 14-day performance guarantee • No hardware needed
+        </p>
+</div>
+</div>
+</section>
+<section class="w-full bg-surface-container py-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-5xl mx-auto flex flex-wrap items-center justify-around gap-6 text-center">
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-2xl">verified_user</span>
+<span class="font-headline-sm text-sm font-semibold">Pure Customer Recovery</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-2xl">schedule</span>
+<span class="font-headline-sm text-sm font-semibold">24hr Guaranteed Onboarding</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-2xl">lock</span>
+<span class="font-headline-sm text-sm font-semibold">Zero SaaS Complexity</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-2xl">support_agent</span>
+<span class="font-headline-sm text-sm font-semibold">White-Glove Support</span>
+</div>
+</div>
+</section>
+<footer class="w-full max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+</div>
+<span class="font-headline-sm text-sm text-on-surface font-bold">Missed<span class="text-primary">Call</span></span>
+<span class="text-on-surface-variant text-xs ml-4">© 2025 MissedCall Inc. All rights reserved.</span>
+</div>
+<div class="flex items-center gap-6 font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Security</a>
+<a class="hover:text-primary transition-colors" href="mailto:support@missedcall.com">Contact Support</a>
+</div>
+</footer>
+<script>
+    const callsSlider = document.getElementById('callsSlider');
+    const dealSlider = document.getElementById('dealSlider');
+    const callsValue = document.getElementById('callsValue');
+    const dealValue = document.getElementById('dealValue');
+    const recoveredRevenue = document.getElementById('recoveredRevenue');
+    const roiMultiplier = document.getElementById('roiMultiplier');
+
+    function updateCalculator() {
+      const callsPerWeek = parseInt(callsSlider.value, 10);
+      const dealSize = parseInt(dealSlider.value, 10);
+      
+      callsValue.textContent = `${callsPerWeek} calls`;
+      dealValue.textContent = `$${dealSize.toLocaleString()}`;
+
+      const monthlyMissedCalls = callsPerWeek * 4.3;
+      const recoveredCustomers = monthlyMissedCalls * 0.58 * 0.40;
+      const monthlyRevenue = Math.round(recoveredCustomers * dealSize);
+      const roi = Math.max(1, Math.round(monthlyRevenue / 99));
+
+      recoveredRevenue.textContent = `$${monthlyRevenue.toLocaleString()}`;
+      roiMultiplier.textContent = `${roi}x`;
+    }
+
+    callsSlider.addEventListener('input', updateCalculator);
+    dealSlider.addEventListener('input', updateCalculator);
+  </script>
+</div></main></body></html>
